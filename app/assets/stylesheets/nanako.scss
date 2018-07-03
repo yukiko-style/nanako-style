@@ -1,0 +1,103 @@
+// Place all the styles related to the nanako controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+*{
+/*リンクの下線部を消す*/
+ text-decoration: none;
+ /*フォント全体指定*/
+ font-family: 'MS Serif';
+/* color: #424242;*/
+color:#4d4d4d;
+ /*display: inline-block;*/
+}
+
+/*マウスオンでリンクの色が変わる設定 （例）aタグだとa:hover{ */
+/*トップページにあるカテゴリーごとに指定する*/
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.title{
+ margin-left: 50px;
+/* text-align: center;*/
+}
+
+/*Infomation*/
+.infomation{
+ margin-left: 50px;
+}
+
+
+
+/*講座一覧*/
+.lesson{
+margin-left: 50px;
+}
+
+.lesson-box{
+ width: 80%; /* lessonに対して80%の幅 */
+ height: auto; /* 要素分の高さ */
+}
+
+
+.lesson-group{
+
+
+}
+
+.lesson-image{
+ padding-bottom: 20px;
+ margin-bottom:  20px;
+ border-bottoms:  1px solid #F7f7f7;
+}
+
+
+.menu01{
+ background-image: url(nanako02.jpg);
+}
+
+.menu-02{
+ background-image: url(nanako02.jpg);
+}
+
+.menu-03{
+ background-image: url(nanako02.jpg);
+}
+
+
+.menu-04{
+ background-image: url(nanako02.jpg);
+}
+
+
+.menu-05{
+ background-image: url(nanako02.jpg);
+}
+
+.menu-06{
+ background-image: url(nanako02.jpg);
+}
+
+
+.menu-07{
+ background-image: url(nanako02.jpg);
+}
+
+
+.menu-08{
+ background-image: url(nanako02.jpg);
+}
+
+
+
+
+/*メディア掲載*/
+.media{
+width: 600px;
+margin-left: 50px;
+}

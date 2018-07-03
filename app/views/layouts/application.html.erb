@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!-- headはnanakoサイトの全体の指示内容をを記載 -->
+  <head>
+    <%= csrf_meta_tags %>
+<!-- アイコン -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+ <!-- header -->
+<div class="container clearfix">
+  <div class="salon-name">
+  	<h1>NANAKO STYLE</h1>
+  </div>
+  <nav class="menu-box">
+   <ul class="nav">
+		   <li class="nav-list"><a href="#news">News</a></li>
+		   <li class="nav-list"><a href="#lesson"></a>Lesson</li>
+		   <li class="nav-list"><a href="#profile">Profile</a></li>
+		   <li class="nav-list"><a href="#contact">お問合せ</a></li>
+    </ul>
+
+ </nav>
+</div>
+
+ <div class="top-image">
+ </div>
+
+<!-- メイン・サイド画面 -->
+<div class="top clearfix">
+
+<!-- メインページ -->
+   <div class="box-div-70">
+       <%= yield %>
+   </div>
+
+<!-- サイドバー -->
+    <div class="box-div-25">
+  	    <h2>NANAKO STYLE</h2>
+           <div class="salon-image"></div>
+       <div class="salon-data">
+           <div class="address"></div>
+            〒210-0006<br>
+            川崎市川﨑区砂子2-8-1-512<br>
+        <div class="fas fa-phone-square">
+             070-5469-9624<br>
+         </div>
+       <br>
+         <div class="fas fa-envelope-square">
+            nijiiro.salon@gmail.com<br>
+          </div>
+     </div>
+
+<!-- 動画 -->
+ <div class="youtube">
+ 	 <h3>メディア動画</h3>
+    <iframe width="340" height="191" src="https://www.youtube.com/embed/KUujt_lKOhQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<!-- Book -->
+ <div class="book">
+    <h2>■Book■</h2>
+    <p>nanakoの美容法、トレーニング法が紹介されています</p>
+     <iframe src="https://book.mynavi.jp/ec_products_detail_html/id=90853" frameborder="0" width="220" height="250" scrolling="yes"></iframe>
+
+</div>
+
+  <!-- SNS -->
+  <div class="facebook">
+    <h2>■Facebook■</h2>
+       <div class="fb-page" data-href="https://www.facebook.com/Nijiiro-salon/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Nijiiro-salon-1402919953302936/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Nijiiro-salon-1402919953302936/">nijiiro salon comming soon</a></blockquote>
+     </div>
+   </div>
+
+   <div class="instagram">
+   <h2>■Instagram■</h2>
+   <!-- InstaWidget -->
+ <!-- InstaWidget -->
+   <a href="https://instawidget.net/v/user/nanako.life" id="link-90dd33ff3b4131ef03015f2edcf2e0f5cd291b446867ce34463463b44da7f1b9">@nanako.life</a>
+   <script src="https://instawidget.net/js/instawidget.js?u=90dd33ff3b4131ef03015f2edcf2e0f5cd291b446867ce34463463b44da7f1b9&width=300px"></script>
+   </div>
+
+ </div>
+</div>
+
+<!-- footer -->
+  <footer>
+    <div class="footer-box">
+      <p>Copyright ©2018 NANAKO STYLE All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,151 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*{
+/*リンクの下線部を消す*/
+ text-decoration: none;
+ /*フォント全体指定*/
+ font-family: 'MS Serif';
+/* color: #424242;*/
+color:#4d4d4d;
+ /*display: inline-block;*/
+}
+
+/*マウスオンでリンクの色が変わる設定 （例）aタグだとa:hover{ */
+/*トップページにあるカテゴリーごとに指定する*/
+
+/*header*/
+.container{
+width: 100%;
+margin: 0 auto;
+}
+
+.salon-name{
+width: 400px;
+font-size: 18px;
+margin: 10px auto;
+padding-left: 50px;
+float: left;
+}
+
+.menu-box{
+text-align: center;
+padding: 10px;
+margin: 0 auto;
+margin-right: 50px;
+float: right;
+}
+
+
+.nav-list{
+font-size: 20px;
+text-align: center;
+list-style: none;
+float: left;
+/*display: inline-block;*/
+text-decoration: none;
+padding: 10px;
+/*margin: 0 auto;*/
+/*文字色グレー*/
+color: #696969;
+list-style: none;
+}
+
+.top-image{
+/*トップ画像比率1+1.618サイズ*/
+ width: 1280px;
+/* height: 489px;*/
+ height: 388px;
+ margin: 0 auto;
+ background-image: url(nanako01.jpg);
+ background-size: cover;/* 背景画像の縦横比を維持したまま背景の表示領域を覆うように表示 */
+ background-position: center; /* 背景画像を中央に配置 */
+}
+
+
+
+/*body*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*メイン box-div-70*/
+.box-div-70{
+ width:70%;
+ float: left;
+}
+
+
+
+
+
+
+/*サイド box-list-style: none;div-25*/
+.box-div-25{
+width: 25%;
+float: left;
+text-align: left;
+margin-left: 5%;
+}
+
+.salon-image{
+  width:200px;
+  height:200px;
+  margin: 10px 0;
+  background-image: url(nanakostyle.jpg);
+  background-size: cover; /* 縦横比を維持したまま背景の表示領域を覆うように表示 */
+}
+
+.salon-data{
+ margin: 0 auto;
+}
+
+.youtube{
+float: left;
+margin: 0 auto;
+}
+
+.book{
+float: left;
+margin: 20px auto;
+}
+
+.facebook{
+float: left;
+margin: 0 auto;
+}
+
+.instagram{
+float: left;
+margin: 0 auto;
+}
+
+
+
+
+/*footer*/
+.footer-box{
+ width: 100%;
+ display: block;
+ line-height: 60px;
+ text-align: center;
+ font-size: 16px;
+ color: #111;
+ float: none;
+}
+
